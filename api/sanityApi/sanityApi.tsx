@@ -31,12 +31,12 @@ import client from "../../sanity";
 export async function getFeaturedCategories() {
     try {
 
-        console.log(">>>")
+
         //calling the query
         const posts = await client.fetch('*[_type == "category"]')
-        console.log("posts>>", posts)
+
         return posts
     } catch (error) {
-        console.log(error)
+        // console.log('BAKEND>>>>', error)
     }
 }

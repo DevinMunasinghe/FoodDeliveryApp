@@ -11,7 +11,7 @@ export default function ResturantScreen() {
 
     const { params } = useRoute()
     let item: any = params;
-    console.log("items>>>", item)
+    // console.log("items>>>", item)
 
     const navigation = useNavigation();
 

@@ -6,20 +6,11 @@ import { themeColors } from '../../theme';
 import Categories from '../../components/categories';
 import { featured } from '../../constants';
 import FeaturedRow from '../../components/featuredRow';
-import { getFeaturedCategories } from '../../api/SanityApi/sanityApi';
-import { urlFor } from '../../sanity';
-import { Category } from '../../models/Category.model';
 
 export default function HomeScreens() {
 
 
-    const [categoryList, setCategoryList] = useState<Category[]>([])
-    useEffect(() => {
-        getFeaturedCategories().then(data => {
-            console.log("data>>>", data)
-            setCategoryList(data)
-        })
-    }, [])
+
 
     return (
         <SafeAreaView className="bg-white">
